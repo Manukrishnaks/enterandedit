@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit data</title>
+</head>
+<body>
+    <h1>Edit page</h1>
+    <form action="/edit/<%= user._id %>" method="POST">
+        <input type="text" name="name" value="<%=user.name %>" required>
+        <button type="submit">Change</button>
+    </form>
+</body>
+</html>
